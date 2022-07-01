@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fintech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+     
+     <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalTittle" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Acesse sua conta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="mb-3">
+                <label for="loginSenha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar</button>
+              <div id="emailHelp" class="form-text">Esqueceu a senha? <a href="#">Clique aqui</a> .</div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Modal fim-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-2 box-shadow">
+      <a href="index.html" class="navbar-brand">
+        <img class="logo" src="img/logo.png" alt="Fintech">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end m-3" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link " href="planos.html">Planos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+            </li>
+            <li class="nav-item ">
+              <a class="btn btn-outline-primary ml-md-2" href="#">Teste Grátis</a>
+            </li>
+          </ul>
+        </div>
+        
+    </nav>   
+    
+    <section class="container-fluid p-0">
+      <div class="row bg-dark text-white">
+        <div class="col-lg-7 p-0">
+            <div id="carouselHome" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active ">
+                  <img class="img-fluid" src="img/banco2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption ">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="img-fluid " src="img/credit-cards2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption ">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="img-fluid" src="img/cofrinho2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption ">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          
+        </div>
+        <div class=" col-lg-5 p-3 ">
+          <h1 class="display-6 ">Controle suas contas com facilidade e segurança!</h1>
+                    
+          <p  class="lead text-break">Controle suas finanças! Para uso empresarial ou pessoal, totalmente personalizável para atendê-lo da melhor forma possível.</p>
+          
+          
+          <form action="">
+            <div class="input-group input-group-md ">
+              <input type="text" class="form-control" placeholder="Informe seu email" aria-label="Email">
+              <button class="btn btn-primary" type="button" id="button-addon2" >Experimente Grátis</button>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+    </section>
+   
+     <section class="col-7 container-fluid align-self-center">
+       <div class=" p-4 align-self-center" >
+        <h3>The standard Lorem Ipsum passage, used since the 1500s</h3> 
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+       <h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3> 
+         <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+      </div>
+
+    </section>
+    
+    <section id="home-quote" class="p-md-5" >
+      <blockquote class="blockquote text-center text-white pt-md-5 p-3">
+        <p  class="display-4 p-5"><em>“Toda grande caminhada <br> começa com um simples passo”</em></p>
+      </blockquote>
+    </section>
+    
+    
+    
+    <footer class="bg-dark text-white" >
+        <div class="container py-4" >
+          <div class="row">
+            <div class="col-md-5 col-6">
+              <h4 class="h6" >PÁGINAS</h4>
+              <ul class="list-unstyled ">
+                <li class="text-primary"><a href="#"></a>Planos</li>
+                <li class="text-primary"><a href="#"></a>Contato</li>
+                <li class="text-primary" ><a href="#"></a>Cadastre-se</li>
+              </ul>
+            </div>
+            <div class="col-md-5 col-6">
+              <h4 class="h6" >DADOS DE CONTATO</h4>
+              <ul class="list-unstyled text-secondary">
+                <li><a href="#"></a>contato@fintech.com.br</li>
+                <li><a href="#"></a>11 99999-9999</li>
+                <li><a href="#"></a>De seg. à sexta das 8h as 18h</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h4 class="h6" >REDES SOCIAIS</h4>
+              <ul class="list-unstyled">
+                <li><a class="btn btn-outline-secondary  d-block mb-2" href="#" style="max-width: 148px">FACEBOOK</a></li>
+                <li><a class="btn btn-outline-secondary  d-block mb-2" href="#" style="max-width: 148px">TWITTER</a></li>
+                <li><a class="btn btn-outline-secondary  d-block mb-2" href="#" style="max-width: 148px">INSTAGRAM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0" >Fintech @2022. Alguns direitos reservados</p>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
